@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sty.css">
+    <style>
+        body{
+            font-family: 'Mitr', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: darkorange;
+            color: white;
+            padding: 10px 50px 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            left: 0;
+        }
+        .logo{
+            margin-left: 20px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            display: inline-block;
+        }
+
+        #content{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+        footer{
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a.btn{
+            height: 40px;
+            width: 150px;
+            margin-top: 15px;
+            border-radius: 30px;
+            background-color: orangered;
+            color: white;
+            border: solid 1px #255;
+
+            padding-top: 18px;
+            text-align: center;
+            text-decoration: none;
+        }
+           
+         a.btn:hover{
+            background-color: white;
+            color: orangered;
+
+         }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <img src="" alt="LOGO" width="50"> -->
+            LOGO
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Service.html">Service</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main id="content">
+        <h1>บริษัท มาซารุ จำกัด </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut debitis doloremque ducimus qui, earum molestiae?</p>
+        <a href="#"class="btn">Start Now</a>
+    </main>
+
+    <footer>
+        &copy; Wannapa Tumninkan
+    </footer>
+
+</body>
+
+</html>
